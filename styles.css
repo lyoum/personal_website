@@ -1,0 +1,56 @@
+/* Custom CSS for additional styling */
+body {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth transitions for interactive elements */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Responsive image sizing */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hover effects for project cards */
+#projects .bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .bg-white:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Form input focus states */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
